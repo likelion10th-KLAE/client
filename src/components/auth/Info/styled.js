@@ -2,7 +2,8 @@ import styled from "styled-components";
 import BackgroundImg from "../../../assets/flower1.png";
 
 export const InfoSection = styled.div`
-  background-image: url(${BackgroundImg});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(${BackgroundImg});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
