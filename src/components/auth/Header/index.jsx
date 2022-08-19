@@ -8,13 +8,29 @@ import {
   HeaderText,
 } from "./styled";
 
+import { useNavigate } from "react-router-dom";
+
 const Header = () => {
+  const navigate = useNavigate();
+
+  const goInfo = () => {
+    navigate("/");
+  };
+
+  const goLogin = () => {
+    navigate("/login");
+  };
+
+  const goSign = () => {
+    navigate("/signup");
+  };
+
   return (
     <HeaderSection>
-      <HeaderTitle>KLAE</HeaderTitle>
+      <HeaderTitle onClick={goInfo}>KLAE</HeaderTitle>
       <HeaderRight>
-        <HeaderLogin>LOGIN</HeaderLogin>
-        <HeaderSignUp>SIGN UP</HeaderSignUp>
+        <HeaderLogin onClick={goLogin}>LOGIN</HeaderLogin>
+        <HeaderSignUp onClick={goSign}>SIGN UP</HeaderSignUp>
         <HeaderText>KLAE에 오신 것을 환영합니다!</HeaderText>
       </HeaderRight>
     </HeaderSection>

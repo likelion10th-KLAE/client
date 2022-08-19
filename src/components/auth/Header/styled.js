@@ -4,14 +4,17 @@ export const HeaderSection = styled.div`
   display: flex;
   justify-content: space-between;
   height: 50px;
-  background-color: black;
   color: white;
 `;
 
 export const HeaderTitle = styled.div`
   font-size: 15pt;
   margin: 10px 30px;
-  height: ;
+  text-decoration: none;
+  &:hover {
+    color: lightgray;
+    cursor: pointer;
+  }
 `;
 
 export const HeaderRight = styled.div`
@@ -23,11 +26,19 @@ export const HeaderRight = styled.div`
 `;
 
 export const HeaderLogin = styled.div`
-  margin-right: 10px;
+  margin-right: 20px;
+  &:hover {
+    color: lightgray;
+    cursor: pointer;
+  }
 `;
 
 export const HeaderSignUp = styled.div`
-  margin-right: 10px;
+  margin-right: 20px;
+  &:hover {
+    color: lightgray;
+    cursor: pointer;
+  }
 `;
 
 export const HeaderText = styled.div``;

@@ -1,11 +1,12 @@
-import React from 'react';
-import { createGlobalStyle } from 'styled-components';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Template from './components/template';
-import Login from './components/auth/login';
-import SignUp from './components/auth/signup';
-import Plant from './components/plant';
+import React from "react";
+import { createGlobalStyle } from "styled-components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Template from "./components/template";
+import Login from "./components/auth/login";
+import SignUp from "./components/auth/signup";
+import Plant from "./components/plant";
 import AddPlant from "./components/addplant";
+import Info from "./components/auth/Info";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -24,17 +25,17 @@ const App = () => {
       <GlobalStyle />
       <Template>
         <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login/>} />
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/signup" element={<SignUp/>}/>
-          <Route path="/plant/:id" element={<Plant/>}/>
-					<Route path="/addplant" element={<AddPlant/>}/>
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Info />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/plant/:id" element={<Plant />} />
+            <Route path="/addplant" element={<AddPlant />} />
+          </Routes>
         </BrowserRouter>
       </Template>
     </>
-  )
-}
+  );
+};
 
 export default App;
