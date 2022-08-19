@@ -10,11 +10,10 @@ export const InfoSection = styled.div`
   height: 100vh;
 `;
 
-export const InfoCenter = styled.div`
+export const InfoLeft = styled.div`
   height: 200px;
   width: 500px;
   margin: 150px 100px;
-
   color: white;
 `;
 
