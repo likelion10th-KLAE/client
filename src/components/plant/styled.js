@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import back from "./배경.png";
+import back from "../../assets/배경.png";
 
 export const UserSection = styled.div`
 	// background-color: red;
 	width: 20rem;
-	height: 15rem;
+	height: 17rem;
 	padding: 0.5rem;
 	border-bottom-style: solid;
 	border-bottom-color: grey;

@@ -27,9 +27,9 @@ import {
 	TextDiv,
 	ButtonDiv,
 } from "./styled";
-import plant1 from "./식물1.jpg";
-import sun from "./sun.png";
-import water from "./water.png";
+import plant1 from "../../assets/식물1.jpg";
+import sun from "../../assets/sun.png";
+import water from "../../assets/water.png";
 
 const Plant = () => {
 	const sample = [
