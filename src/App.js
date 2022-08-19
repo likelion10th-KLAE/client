@@ -6,6 +6,7 @@ import Login from './components/auth/login';
 import SignUp from './components/auth/signup';
 import Plant from './components/plant';
 import AddPlant from "./components/addplant";
+import Recommend from "./components/recommend";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/plant/:id" element={<Plant/>}/>
 					<Route path="/addplant" element={<AddPlant/>}/>
+          <Route path="/recommend" element={<Recommend/>}/>
         </Routes>
         </BrowserRouter>
       </Template>
